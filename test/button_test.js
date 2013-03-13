@@ -22,12 +22,12 @@ var grunt = require('grunt');
     test.ifError(value)
 */
 
-exports.styleguide = {
+exports.button = {
   setUp: function(done) {
     // setup here if necessary
     done();
   },
-  stylus: function(test) {
+  rework: function(test) {
     test.expect(1);
 
     var actual = grunt.file.read('release/button.css');

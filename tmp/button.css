@@ -1,4 +1,26 @@
-/*
+%button-base {
+    position: relative;
+    display: inline-block;
+    padding: 0 0.75em;
+    margin: 0;
+    overflow: hidden;
+    font: inherit;
+    color: inherit;
+    text-align: center;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    box-sizing: border-box;
+    background-clip: padding-box;
+    user-select: none;
+}
+
+
+/*!
 Copyright 2012 Adobe Systems Inc.;
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -12,40 +34,19 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 */
-
-.button,
-.button--large,
-.button--quiet {
-  position: relative;
-  display: inline-block;
-  padding: 0 0.75em;
-  margin: 0;
-  overflow: hidden;
-  font: inherit;
-  color: inherit;
-  text-align: center;
-  text-decoration: none;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  vertical-align: middle;
-  cursor: pointer;
-  background: transparent;
-  border: none;
-  box-sizing: border-box;
-  background-clip: padding-box;
-  user-select: none
-}
-
 .button {
-
+    extend: %button-base;
 }
 
 .button--large {
-
+    extend: %button-base;
 }
 
 .button--quiet {
+  extend: %button-base;
   background-color: transparent;
+/* Border is added so button doesn't shift when clicked */
   border: 1px solid transparent;
-  box-shadow: none
+  box-shadow: none;
 }
+

@@ -33,11 +33,12 @@ limitations under the License.
   border: none;
   box-sizing: border-box;
   background-clip: padding-box;
-  user-select: none;
+  user-select: none
 }
+
 .button--quiet {
   background-color: transparent;
 /* Border is added so button doesn't shift when clicked */
   border: 1px solid transparent;
-  box-shadow: none;
+  box-shadow: none
 }

@@ -2,7 +2,6 @@
   "name": "button",
   "version": "0.0.0",
   "description": "TopCoat button base",
-  "main": "button.css",
   "directories": {
     "test": "test"
   },
@@ -23,9 +22,12 @@
   "author": "@dam Kristofer Joseph",
   "license": "Apache",
   "devDependencies": {
-    "grunt-contrib-stylus": "~0.4.0rc7",
     "grunt": "~0.4.0rc7",
     "grunt-contrib-watch": "~0.1.4",
-    "grunt-contrib-nodeunit": "~0.1.2"
+    "grunt-contrib-nodeunit": "~0.1.2",
+    "grunt-rework": "0.0.3",
+    "grunt-contrib-clean": "~0.4.0",
+    "rework": "~0.13.2",
+    "grunt-contrib-concat": "~0.1.3"
   }
 }

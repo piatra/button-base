@@ -12,3 +12,19 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 */
+.button {
+    extend: %button-base;
+}
+
+.button--large {
+    extend: %button-base;
+}
+
+.button--quiet {
+  extend: %button-base;
+  background-color: transparent;
+/* Border is added so button doesn't shift when clicked */
+  border: 1px solid transparent;
+  box-shadow: none;
+}
+
