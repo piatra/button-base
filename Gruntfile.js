@@ -9,10 +9,20 @@ module.exports = function(grunt) {
         },
 
         topcoat: {
+            options: {
+                repos: '<%= pkg.topcoat %>',
+                src: 'tmp/src',
+                controlsPath: '<%= topcoat.options.src %>/controls',
+                skinsPath: '<%= topcoat.options.src %>/skins',
+                themePath: '<%= topcoat.options.src %>/theme',
+                utilsPath: '<%= topcoat.options.src %>/utils',
+            },
             download: {
                 options: {
-                    srcPath: 'tmp/src/',
-                    repos: '<%= pkg.topcoat %>'
+                    hostname: 'https://github.com/',
+                    proxy: '',
+                    download: true,
+                    compile: false
                 }
             }
         },
